@@ -1,0 +1,46 @@
+<div class="vertical-center">
+    <div>
+        <img src="https://riskaware.com/wp-content/themes/rasite/images/logo.png" class="logo">
+        <mat-card>
+            <mat-card-content>
+                <form (submit)="submit($event)">
+                    <h3>Sign Up</h3>
+                    <div>
+                        <mat-form-field appearance="outline">
+                            <mat-label>First Name</mat-label>
+                            <input name="firstName" matInput required [(ngModel)]="signup.firstName">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Last Name</mat-label>
+                            <input name="lastName" matInput required [(ngModel)]="signup.lastName">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Email Address</mat-label>
+                            <input name="emailAddress" matInput required [(ngModel)]="signup.emailAddress">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input name="password" matInput type="password" required [(ngModel)]="signup.password">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Confirm Password</mat-label>
+                            <input name="confirmPassword" matInput type="password" required
+                                [(ngModel)]="signup.confirmPassword">
+                        </mat-form-field>
+                    </div>
+                    <button type="submit" mat-flat-button>Sign Up</button>
+                </form>
+                <mat-divider inset></mat-divider>
+                <p>Already have an account? <a [routerLink]="['/']">Log In</a></p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

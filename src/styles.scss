@@ -1,1 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: Poppins, sans-serif !important;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background-color: #EEEEF7;
+}
+
+a {
+    color: #022b57;
+}
+
+input[type=file] {
+    position: relative;
+    left: -9999px;
+}
+
+.mat-form-field {
+    width: 320px;
+}
+
+.mat-flat-button {
+    background-color: #cc5600 !important;
+    color: #FFF;
+}
+
+.mat-divider-inset {
+    margin-top: 20px !important;
+}
+
+.vertical-center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 720px;
+    margin: 0 auto;
+
+    header,
+    footer {
+        margin: 20px 0;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .mat-card {
+        width: 720px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}

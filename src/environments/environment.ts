@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: "https://document-management-api.azurewebsites.net"
+  apiUrl: "http://localhost:5000"
 };
 
 /*

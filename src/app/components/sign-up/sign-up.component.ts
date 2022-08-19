@@ -15,8 +15,8 @@ export class SignupComponent {
 
     submit(event: Event) {
         this.userService.signup(this.signup).subscribe(response => {
-            this.snackbar.open("Account created successfully. You are now signed in.");
-            this.router.navigate(['/login']);
+            this.snackbar.open("Account created successfully.");
+            this.router.navigate(['/']);
         });
     }
 }

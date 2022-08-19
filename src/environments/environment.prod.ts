@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: "https://document-management-api.azurewebsites.net"
+  apiUrl: "https://ra-apps.eastus.cloudapp.azure.com"
 };

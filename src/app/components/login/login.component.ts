@@ -8,11 +8,15 @@ import { UserService } from 'src/app/services/user.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
 
   login = new Login();
 
   constructor(private router: Router, private userService: UserService) { }
+
+  ngOnInit() {
+    this.userService.logout();
+  }
 
   submit() {
     this.userService.login(this.login).subscribe(response => {
